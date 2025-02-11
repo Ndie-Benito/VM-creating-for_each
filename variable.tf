@@ -38,3 +38,15 @@ variable "admin_password" {
   description = "Mot de passe administrateur de la VM"
   sensitive   = true
 }
+
+variable "resource_group_name" {
+  description = "Nom du groupe de ressources Azure"
+  type        = string
+  default     = "my-resource-group"
+}
+
+variable "location" {
+  description = "Localisation des ressources Azure"
+  type        = string
+  default     = "West Europe"
+}
